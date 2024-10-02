@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Unit Converter</h1>
+        <p>Convert between Celsius, Kilograms, and Kilometers easily!</p>
+    </div>
+</header>
+
+<main class="container">
+    <div class="converter-grid">
+        <!-- Temperature Converter Section -->
+        <section class="converter" id="temperature">
+            <h2>Celsius to Fahrenheit</h2>
+            <input type="number" id="celsius" placeholder="°C">
+            <button onclick="convertTemperature()">Convert</button>
+            <p id="temperatureResult" class="result"></p>
+        </section>
+
+        <!-- Weight Converter Section -->
+        <section class="converter" id="weight">
+            <h2>Kilograms to Pounds</h2>
+            <input type="number" id="kilograms" placeholder="kg">
+            <button onclick="convertWeight()">Convert</button>
+            <p id="weightResult" class="result"></p>
+        </section>
+
+        <!-- Distance Converter Section -->
+        <section class="converter" id="distance">
+            <h2>Kilometers to Miles</h2>
+            <input type="number" id="kilometers" placeholder="km">
+            <button onclick="convertDistance()">Convert</button>
+            <p id="distanceResult" class="result"></p>
+        </section>
+
+        <!-- GCD Section -->
+        <section class="converter" id="gcd">
+            <h2>GCD of Two Numbers</h2>
+            <input type="number" id="num1" placeholder="Number 1">
+            <input type="number" id="num2" placeholder="Number 2">
+            <button onclick="calculateGCD()">Calculate GCD</button>
+            <p id="gcdResult" class="result"></p>
+        </section>
+
+        <!-- LCM Section -->
+        <section class="converter" id="lcm">
+            <h2>LCM of Two Numbers</h2>
+            <input type="number" id="lcmNum1" placeholder="Number 1">
+            <input type="number" id="lcmNum2" placeholder="Number 2">
+            <button onclick="calculateLCM()">Calculate LCM</button>
+            <p id="lcmResult" class="result"></p>
+        </section>
+
+        <!-- Modulo Section -->
+        <section class="converter" id="modulo">
+            <h2>Modulo of Two Numbers</h2>
+            <input type="number" id="modNum1" placeholder="Number 1">
+            <input type="number" id="modNum2" placeholder="Number 2">
+            <button onclick="calculateModulo()">Calculate Modulo</button>
+            <p id="modResult" class="result"></p>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Unit Converter Application | <a href="#privacy">Privacy Policy</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
